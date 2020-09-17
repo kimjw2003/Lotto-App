@@ -3,6 +3,7 @@ package com.example.lottoapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -15,5 +16,11 @@ class SplashActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        Handler().postDelayed({
+            var intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 2000)
     }
 }
