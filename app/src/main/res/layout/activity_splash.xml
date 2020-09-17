@@ -5,5 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/winners_animation"
+        android:scaleType="centerCrop"
+        app:lottie_loop="true"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
