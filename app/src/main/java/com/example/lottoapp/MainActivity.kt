@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val lotteryNumbers = arrayListOf(num1, num2, num3, num4, num5, num6)
 
-        val countDownTimer = object : CountDownTimer(2000, 100) {
+        val countDownTimer = object : CountDownTimer(3000, 100) {
             override fun onFinish() {
             }
 
