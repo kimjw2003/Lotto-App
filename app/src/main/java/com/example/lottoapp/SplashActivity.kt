@@ -11,12 +11,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        animationView.setOnClickListener{
-            var intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         Handler().postDelayed({
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
